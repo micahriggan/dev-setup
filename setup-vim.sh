@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone git@gitlab.com:micahriggan/micah-vim-config.git ~/micah-vim-config
+git clone https://github.com/micahriggan/micah-vim-config.git ~/micah-vim-config
 rm ~/.vim
 ln -s ~/micah-vim-config ~/.vim
 
