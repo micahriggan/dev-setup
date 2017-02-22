@@ -11,13 +11,16 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 nvm use node
 
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
+sudo apt-get update 
+sudo apt-get install -y yarn
 sudo apt-get install -y obs-studio
 sudo apt-get install -y fluxgui
 sudo apt-get install -y git
 sudo apt-get install -y vim
 sudo apt-get install -y nodejs
-sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo apt-get install -y build-essential
 sudo apt-get install -y cmake
 sudo apt-get install -y npm
@@ -29,6 +32,10 @@ sudo apt-get install -y python-dev python3-dev
 sudo apt-get install python-setuptools
 sudo easy_install pip
 sudo apt-get install -y ffmpeg
+
+
+
+sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 sudo apt-get install apt-transport-https ca-certificates
