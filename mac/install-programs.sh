@@ -21,6 +21,10 @@ brew install wget
 brew install npm
 brew install vim
 
+brew install fzf
+brew install fd
+brew install the_silver_searcher
+
 python3 -m pip install tmuxp
 
 npm install -g tern
