@@ -32,3 +32,10 @@ npm install -g typescript
 npm install -g typescript-formatter
 npm install -g js-beautify
 npm install -g prettier
+
+
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
