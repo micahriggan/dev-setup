@@ -4,6 +4,13 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_DEFAULT_COMMAND="alias ag='ag . --path-to-ignore ~/.ignore"
 
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 
 
 _nvmrc_hook() {
