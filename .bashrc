@@ -1,8 +1,7 @@
 source ~/.dev/.shell-prompt.sh
 export GOPATH=~/gopath
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-export FZF_DEFAULT_COMMAND="alias ag='ag . --path-to-ignore ~/.ignore"
+export FZF_DEFAULT_COMMAND="alias ag='ag . --path-to-ignore ~/.fdignore' && fd --type f --hidden --follow --exclude .git"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
